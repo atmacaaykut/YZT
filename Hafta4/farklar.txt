@@ -1,0 +1,29 @@
+Random Forests:
+Temel Mantık: Random Forests, birçok karar ağacını (decision tree) bir araya getirerek tahminler yapar. Her ağaç aynı veri seti üzerinde aynı algoritmayı kullanır, ancak veri setinin rastgele örneklemeleriyle eğitilir.
+Paralel Eğitim: Ağaçlar paralel olarak eğitildiği için büyük veri setlerinde etkilidir.
+Overfitting Kontrolü: Ağaçların sayısını artırarak overfitting'i kontrol edebilir.
+
+
+Gradient Boosting Machine (GBM):
+Temel Mantık: GBM, zayıf öğreniciler (genellikle karar ağaçları) ekleyerek çalışır. Her ağaç, önceki ağaçların hatalarını düzeltmeye odaklanır.
+Sequential Eğitim: Ağaçlar sıralı olarak eklenir, her biri öncekilerin hatalarını düzeltmeye çalışır.
+Overfitting Kontrolü: Ağaç sayısı, öğrenme oranı ve diğer hiperparametrelerle overfitting kontrol edilir.
+XGBoost (eXtreme Gradient Boosting):
+
+
+Optimizasyonlar: XGBoost, paralel hesaplamalar, özel öğrenme algoritmaları ve diğer optimizasyonlarla GBM'i geliştirir.
+Regularization: Ek olarak, ağaç oluşturma sırasında regularization teknikleri kullanarak overfitting'i kontrol eder.
+Hızlı Eğitim: Yüksek performans ve hızlı eğitim özellikleri ile bilinir.
+
+
+LightGBM:
+Histogram Bazlı Gradient Boosting: LightGBM, veri setinin histogramlarını kullanarak ağaçları oluşturur. Bu, hızlı eğitimi sağlar.
+Leaf-wise Büyüme: LightGBM, ağacın en iyi bölme yapısını bulmak için leaf-wise büyüme stratejisini kullanır.
+Kategorik Değişken Desteği: Kategorik değişkenleri daha etkili bir şekilde işler.
+
+
+CatBoost:
+Kategorik Değişken Desteği: CatBoost, kategorik değişkenleri özel olarak işleyerek modelin performansını artırır.
+Dahili Regularization: Overfitting'i kontrol etmek için dahili olarak regularization kullanır.
+Otomatik Ayarlar: Birçok hiperparametreyi otomatik olarak ayarlamak için özel bir optimizasyon algoritması içerir.
+Her biri farklı avantajlara sahiptir ve kullanım durumuna bağlı olarak tercih edilebilir. Random Forests, basit ve güçlü bir başlangıç noktası sağlar. GBM, öğrenme kapasitesi yüksek ve sequential öğrenmeye ihtiyaç duyan durumlar için uygundur. XGBoost, hız ve performans açısından iyidir. LightGBM, büyük veri setleri üzerinde hızlı eğitim ve düşük bellek kullanımı sağlar. CatBoost, kategorik değişkenlerle çalışmak için özellikle uygundur ve otomatik ayarlar sunar.
